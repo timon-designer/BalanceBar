@@ -1,0 +1,53 @@
+{
+  "refreshSeconds": 600,
+  "menuTitle": "auto",
+  "showCurrencySymbol": true,
+  "providers": [
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "type": "deepseek",
+      "enabled": true,
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "baseURL": "https://api.deepseek.com",
+      "rechargeURL": "https://platform.deepseek.com/top_up",
+      "consoleURL": "https://platform.deepseek.com/usage",
+      "lowWarn": 10
+    },
+    {
+      "id": "zhipu",
+      "name": "智谱 GLM",
+      "type": "zhipu",
+      "enabled": true,
+      "apiKeyEnv": "GLM_API_KEY",
+      "baseURL": "https://open.bigmodel.cn",
+      "rechargeURL": "https://open.bigmodel.cn/finance/personal",
+      "consoleURL": "https://open.bigmodel.cn/console/overview",
+      "lowWarn": 10
+    },
+    {
+      "id": "bailian",
+      "name": "阿里云百炼",
+      "type": "aliyun",
+      "enabled": true,
+      "accessKeyId": "",
+      "accessKeySecret": "",
+      "rechargeURL": "https://usercenter2.aliyun.com/finance/fund-management/recharge",
+      "consoleURL": "https://bailian.console.aliyun.com/",
+      "lowWarn": 20
+    },
+    {
+      "id": "relay",
+      "name": "第三方中转站",
+      "type": "relay",
+      "enabled": true,
+      "apiKeyEnv": "RELAY_API_KEY",
+      "baseURL": "https://你的中转站域名",
+      "relayUnit": "auto",
+      "relayDivisor": 500000,
+      "rechargeURL": "https://你的中转站域名/topup",
+      "consoleURL": "https://你的中转站域名/console",
+      "lowWarn": 10
+    }
+  ]
+}
